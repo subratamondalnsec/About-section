@@ -1,0 +1,144 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: url('images/ab6.jpg') no-repeat center center/cover;
+    height: 300px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* About Section */
+.about-section {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-section h2 {
+    color: #004080;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.additional-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.additional-images img {
+    width: 30%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.additional-images img:hover {
+    transform: scale(1.05);
+}
+
+/* Mission and Vision Section */
+.mission-vision-section {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f1f1f1;
+    padding: 40px 20px;
+}
+
+.mission-vision-section div {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.mission-vision-section h3 {
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+.mission-vision-section p {
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-text, .about-image {
+        padding-right: 0;
+        max-width: 100%;
+    }
+
+    .additional-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .additional-images img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .mission-vision-section {
+        flex-direction: column;
+    }
+
+    .mission-vision-section div {
+        margin-bottom: 20px;
+    }
+}
